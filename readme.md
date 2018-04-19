@@ -5,23 +5,27 @@ Evaluate .NET API schemes
 
 
 
-Requirements
-============
-
-Expose the *OneTrueBakery* as a service.
-
-Expose the *OneTrueButcher* as a service.
-
-Implement an *IBurritoShop* and expose as a service.  It must use the
-*OneTrueBakery* and *OneTrueButcher* services to get its ingredients.
-
-Implement a test client that uses the *IBurritoShop* service to get some
-lunch.
-
-
-
 Rules
 =====
 
-*May* use the provided *Domain*.
+Schemes *may* use the provided *Domain*.
+
+
+
+Minimal Requirements
+====================
+
+Implement an *IBurritoShop*.
+
+The *IBurritoShop* implementation gets its ingredients from the *OneTrueBakery*
+and *OneTrueButcher*.
+
+Implement a test client that gets some lunch from the *IBurritoShop*.
+
+
+
+Evaluation Criteria
+===================
+
+Services communicate over the network?
 
