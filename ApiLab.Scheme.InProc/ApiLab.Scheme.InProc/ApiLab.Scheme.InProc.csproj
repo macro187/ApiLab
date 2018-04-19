@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Breads\ApiLab.Breads.csproj" />
+    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Burritos\ApiLab.Burritos.csproj" />
+    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Meats\ApiLab.Meats.csproj" />
+  </ItemGroup>
+
+</Project>

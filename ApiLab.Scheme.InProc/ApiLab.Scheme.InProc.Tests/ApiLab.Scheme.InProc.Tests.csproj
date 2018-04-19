@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApiLab.OneTrue\ApiLab.OneTrue.Bakery\ApiLab.OneTrue.Bakery.csproj" />
+    <ProjectReference Include="..\..\ApiLab.OneTrue\ApiLab.OneTrue.Butcher\ApiLab.OneTrue.Butcher.csproj" />
+    <ProjectReference Include="..\ApiLab.Scheme.InProc\ApiLab.Scheme.InProc.csproj" />
+  </ItemGroup>
+
+</Project>
