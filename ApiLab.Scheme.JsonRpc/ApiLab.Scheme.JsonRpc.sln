@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Burritos", "..\ApiLab.Domain\ApiLab.Burritos\ApiLab.Burritos.csproj", "{101164F7-518C-4695-B0DC-5CDA28FCE64B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Breads", "..\ApiLab.Domain\ApiLab.Breads\ApiLab.Breads.csproj", "{2E84BD64-A588-41F2-8370-07C608CA587E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Meats", "..\ApiLab.Domain\ApiLab.Meats\ApiLab.Meats.csproj", "{25C68BBB-646E-4DEB-816F-C0FB1A9DB7E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.OneTrue.Bakery", "..\ApiLab.OneTrue\ApiLab.OneTrue.Bakery\ApiLab.OneTrue.Bakery.csproj", "{25785CDC-F3DF-4D9F-B72F-53FE594C94D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.OneTrue.Butcher", "..\ApiLab.OneTrue\ApiLab.OneTrue.Butcher\ApiLab.OneTrue.Butcher.csproj", "{8F7648BA-9600-4E1B-83E4-B52C203D32B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{101164F7-518C-4695-B0DC-5CDA28FCE64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101164F7-518C-4695-B0DC-5CDA28FCE64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101164F7-518C-4695-B0DC-5CDA28FCE64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101164F7-518C-4695-B0DC-5CDA28FCE64B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E84BD64-A588-41F2-8370-07C608CA587E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E84BD64-A588-41F2-8370-07C608CA587E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E84BD64-A588-41F2-8370-07C608CA587E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E84BD64-A588-41F2-8370-07C608CA587E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C68BBB-646E-4DEB-816F-C0FB1A9DB7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C68BBB-646E-4DEB-816F-C0FB1A9DB7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C68BBB-646E-4DEB-816F-C0FB1A9DB7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C68BBB-646E-4DEB-816F-C0FB1A9DB7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25785CDC-F3DF-4D9F-B72F-53FE594C94D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25785CDC-F3DF-4D9F-B72F-53FE594C94D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25785CDC-F3DF-4D9F-B72F-53FE594C94D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25785CDC-F3DF-4D9F-B72F-53FE594C94D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F7648BA-9600-4E1B-83E4-B52C203D32B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7648BA-9600-4E1B-83E4-B52C203D32B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7648BA-9600-4E1B-83E4-B52C203D32B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7648BA-9600-4E1B-83E4-B52C203D32B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5728453E-54B7-41BC-A989-0679E79294CF}
+	EndGlobalSection
+EndGlobal
