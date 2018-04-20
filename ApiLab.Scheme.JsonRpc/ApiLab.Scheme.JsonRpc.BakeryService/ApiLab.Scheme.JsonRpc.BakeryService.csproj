@@ -9,7 +9,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EdjCase.JsonRpc.Router" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApiLab.OneTrue\ApiLab.OneTrue.Bakery\ApiLab.OneTrue.Bakery.csproj" />
   </ItemGroup>
 
 </Project>
