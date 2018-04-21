@@ -1,26 +1,17 @@
 ApiLab
 ======
 
-Evaluate .NET API schemes
+Evaluate .NET API / SOA schemes
 
 
 
-Rules
-=====
+Mission
+=======
 
-Schemes *may* use the provided *Domain*.
-
-
-
-Minimal Requirements
-====================
-
-Implement an *IBurritoShop*.
-
-The *IBurritoShop* implementation gets its ingredients from the *OneTrueBakery*
+Implement an *IBurritoShop* that gets its ingredients from the *OneTrueBakery*
 and *OneTrueButcher*.
 
-Implement a test client that gets some lunch from the *IBurritoShop*.
+Implement a client that gets lunch from the *IBurritoShop*.
 
 
 
@@ -38,10 +29,10 @@ Network communication encrypted?
 Network wire format is human-readable?
 
 
-Burrito Shop Service Implementation
------------------------------------
+Service Implementations
+-----------------------
 
 "Normal" C# programming style?
 
-Lines of code
+LOC?
 
