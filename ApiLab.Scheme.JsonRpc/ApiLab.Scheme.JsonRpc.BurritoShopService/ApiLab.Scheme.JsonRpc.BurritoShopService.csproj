@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\ApiLab.Scheme.InProc\ApiLab.Scheme.InProc\InProcBurritoShop.cs" Link="InProcBurritoShop.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EdjCase.JsonRpc.Router" Version="2.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Breads\ApiLab.Breads.csproj" />
+    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Burritos\ApiLab.Burritos.csproj" />
+    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Meats\ApiLab.Meats.csproj" />
+    <ProjectReference Include="..\ApiLab.Scheme.JsonRpc.JsonRpcClient\ApiLab.Scheme.JsonRpc.JsonRpcClient.csproj" />
+  </ItemGroup>
+
+</Project>

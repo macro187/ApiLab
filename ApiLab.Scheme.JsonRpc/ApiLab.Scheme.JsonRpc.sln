@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.OneTrue.Butcher", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.BakeryService", "ApiLab.Scheme.JsonRpc.BakeryService\ApiLab.Scheme.JsonRpc.BakeryService.csproj", "{0F04EBF1-14C2-462C-A6CA-9950B0863C7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.ButcherService", "ApiLab.Scheme.JsonRpc.ButcherService\ApiLab.Scheme.JsonRpc.ButcherService.csproj", "{9CE3666E-9E07-4AF3-B44C-5BFD91C14AF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.ButcherService", "ApiLab.Scheme.JsonRpc.ButcherService\ApiLab.Scheme.JsonRpc.ButcherService.csproj", "{9CE3666E-9E07-4AF3-B44C-5BFD91C14AF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.BurritoShopService", "ApiLab.Scheme.JsonRpc.BurritoShopService\ApiLab.Scheme.JsonRpc.BurritoShopService.csproj", "{DEDC3DD7-EF1D-49D8-B8C2-5C2FF2428474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.JsonRpcClient", "ApiLab.Scheme.JsonRpc.JsonRpcClient\ApiLab.Scheme.JsonRpc.JsonRpcClient.csproj", "{5A8D886D-8C51-49B2-A275-80FAB3840C98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{9CE3666E-9E07-4AF3-B44C-5BFD91C14AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE3666E-9E07-4AF3-B44C-5BFD91C14AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE3666E-9E07-4AF3-B44C-5BFD91C14AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDC3DD7-EF1D-49D8-B8C2-5C2FF2428474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDC3DD7-EF1D-49D8-B8C2-5C2FF2428474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDC3DD7-EF1D-49D8-B8C2-5C2FF2428474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDC3DD7-EF1D-49D8-B8C2-5C2FF2428474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A8D886D-8C51-49B2-A275-80FAB3840C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8D886D-8C51-49B2-A275-80FAB3840C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8D886D-8C51-49B2-A275-80FAB3840C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8D886D-8C51-49B2-A275-80FAB3840C98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
