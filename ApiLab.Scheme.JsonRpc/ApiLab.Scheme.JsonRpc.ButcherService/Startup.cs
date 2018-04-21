@@ -1,4 +1,4 @@
-﻿using ApiLab.OneTrue.Butcher;
+﻿using ApiLab.Normal.Butcher;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,7 +19,7 @@ namespace ApiLab.Scheme.JsonRpc.ButcherService
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseManualJsonRpc(builder => {
-                builder.RegisterController<OneTrueButcher>();
+                builder.RegisterController<NormalButcher>();
             });
         }
 

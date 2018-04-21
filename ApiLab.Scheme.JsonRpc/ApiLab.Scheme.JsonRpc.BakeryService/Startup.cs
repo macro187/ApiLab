@@ -1,4 +1,4 @@
-﻿using ApiLab.OneTrue.Bakery;
+﻿using ApiLab.Normal.Bakery;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,7 +19,7 @@ namespace ApiLab.Scheme.JsonRpc.BakeryService
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseManualJsonRpc(builder => {
-                builder.RegisterController<OneTrueBakery>();
+                builder.RegisterController<NormalBakery>();
             });
         }
 

@@ -1,23 +1,24 @@
-using ApiLab.OneTrue.Bakery;
-using ApiLab.OneTrue.Butcher;
+using System;
+using ApiLab.Normal.Bakery;
+using ApiLab.Normal.BurritoShop;
+using ApiLab.Normal.Butcher;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ApiLab.Scheme.InProc.Tests
+namespace ApiLab.IntegrationTests
 {
     [TestClass]
-    public class InProcBurritoShopTests
+    public class ApiLabIntegrationTests
     {
 
-        public TestContext TestContext { get; set; }
-
-
-        InProcBurritoShop burritoShop;
+        NormalBurritoShop burritoShop;
 
 
         [TestInitialize]
         public void TestInitialize()
         {
-            burritoShop = new InProcBurritoShop(new OneTrueBakery(), new OneTrueButcher());
+            var bakery = new NormalBakery();
+            var butcher = new NormalButcher();
+            burritoShop = new NormalBurritoShop(bakery, butcher);
         }
 
 
@@ -30,7 +31,7 @@ namespace ApiLab.Scheme.InProc.Tests
             Assert.AreEqual("FlourTortilla", burrito.Tortilla.Name);
             Assert.AreEqual("Chicken", burrito.Meat.Name);
 
-            TestContext.WriteLine($"Eating {burrito.Name}, yum!");
+            Console.WriteLine($"Eating {burrito.Name}, yum!");
         }
 
 
@@ -43,7 +44,7 @@ namespace ApiLab.Scheme.InProc.Tests
             Assert.AreEqual("CornTortilla", burrito.Tortilla.Name);
             Assert.AreEqual("PulledPork", burrito.Meat.Name);
 
-            TestContext.WriteLine($"Eating {burrito.Name}, yum!");
+            Console.WriteLine($"Eating {burrito.Name}, yum!");
         }
 
     }

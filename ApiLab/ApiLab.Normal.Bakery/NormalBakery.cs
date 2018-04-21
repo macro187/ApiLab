@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using ApiLab.Breads;
 
-namespace ApiLab.OneTrue.Bakery
+namespace ApiLab.Normal.Bakery
 {
-    public class OneTrueBakery : IBakery
+    public class NormalBakery : IBakery
     {
         
         static readonly Tortilla[] tortillas = {

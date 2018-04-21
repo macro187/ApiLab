@@ -1,7 +1,7 @@
 ﻿using System;
 using ApiLab.Breads;
 using ApiLab.Meats;
-using ApiLab.Scheme.InProc;
+using ApiLab.Normal.BurritoShop;
 using ApiLab.Scheme.JsonRpc.JsonRpcClient;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -24,14 +24,14 @@ namespace ApiLab.Scheme.JsonRpc.BurritoShopService
             services.AddTransient<IButcher>(_ =>
                 JsonRpcProxyBuilder.Build<IButcher>(new Uri("http://localhost:53990/")));
 
-            services.AddTransient<InProcBurritoShop>();
+            services.AddTransient<NormalBurritoShop>();
         }
 
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseManualJsonRpc(builder => {
-                builder.RegisterController<InProcBurritoShop>();
+                builder.RegisterController<NormalBurritoShop>();
             });
         }
 

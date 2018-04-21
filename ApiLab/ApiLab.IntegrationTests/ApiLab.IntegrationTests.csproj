@@ -12,9 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ApiLab.OneTrue\ApiLab.OneTrue.Bakery\ApiLab.OneTrue.Bakery.csproj" />
-    <ProjectReference Include="..\..\ApiLab.OneTrue\ApiLab.OneTrue.Butcher\ApiLab.OneTrue.Butcher.csproj" />
-    <ProjectReference Include="..\ApiLab.Scheme.InProc\ApiLab.Scheme.InProc.csproj" />
+    <ProjectReference Include="..\ApiLab.Normal.Bakery\ApiLab.Normal.Bakery.csproj" />
+    <ProjectReference Include="..\ApiLab.Normal.BurritoShop\ApiLab.Normal.BurritoShop.csproj" />
+    <ProjectReference Include="..\ApiLab.Normal.Butcher\ApiLab.Normal.Butcher.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ApiLab.OneTrue\ApiLab.OneTrue.Bakery\ApiLab.OneTrue.Bakery.csproj" />
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Normal.Bakery\ApiLab.Normal.Bakery.csproj" />
   </ItemGroup>
 
 </Project>

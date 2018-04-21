@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\..\ApiLab.Scheme.InProc\ApiLab.Scheme.InProc\InProcBurritoShop.cs" Link="InProcBurritoShop.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -18,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Breads\ApiLab.Breads.csproj" />
-    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Burritos\ApiLab.Burritos.csproj" />
-    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Meats\ApiLab.Meats.csproj" />
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Breads\ApiLab.Breads.csproj" />
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Meats\ApiLab.Meats.csproj" />
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Normal.BurritoShop\ApiLab.Normal.BurritoShop.csproj" />
     <ProjectReference Include="..\ApiLab.Scheme.JsonRpc.JsonRpcClient\ApiLab.Scheme.JsonRpc.JsonRpcClient.csproj" />
   </ItemGroup>
 

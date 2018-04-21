@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using ApiLab.Meats;
 
-namespace ApiLab.OneTrue.Butcher
+namespace ApiLab.Normal.Butcher
 {
-    public class OneTrueButcher : IButcher
+    public class NormalButcher : IButcher
     {
 
         static readonly Meat[] meats = {

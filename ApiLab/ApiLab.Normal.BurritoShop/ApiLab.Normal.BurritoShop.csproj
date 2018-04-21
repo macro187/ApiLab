@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ApiLab.Domain\ApiLab.Meats\ApiLab.Meats.csproj" />
+    <ProjectReference Include="..\ApiLab.Burritos\ApiLab.Burritos.csproj" />
   </ItemGroup>
 
 </Project>

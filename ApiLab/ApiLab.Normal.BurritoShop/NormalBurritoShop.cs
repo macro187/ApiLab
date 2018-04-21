@@ -3,12 +3,12 @@ using ApiLab.Breads;
 using ApiLab.Burritos;
 using ApiLab.Meats;
 
-namespace ApiLab.Scheme.InProc
+namespace ApiLab.Normal.BurritoShop
 {
-    public class InProcBurritoShop : IBurritoShop
+    public class NormalBurritoShop : IBurritoShop
     {
 
-        public InProcBurritoShop(IBakery bakery, IButcher butcher)
+        public NormalBurritoShop(IBakery bakery, IButcher butcher)
         {
             this.bakery = bakery;
             this.butcher = butcher;
