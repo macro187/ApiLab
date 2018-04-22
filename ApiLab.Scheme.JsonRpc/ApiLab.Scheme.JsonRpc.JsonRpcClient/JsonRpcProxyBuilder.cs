@@ -40,7 +40,7 @@ namespace ApiLab.Scheme.JsonRpc.JsonRpcClient
 
         class Interceptor : IInterceptor
         {
-            
+
             public Interceptor(Uri uri)
             {
                 _uri = uri;
