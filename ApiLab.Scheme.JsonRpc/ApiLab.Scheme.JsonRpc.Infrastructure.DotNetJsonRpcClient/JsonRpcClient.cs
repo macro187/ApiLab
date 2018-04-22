@@ -3,17 +3,17 @@ using System.Net.Http.Headers;
 using Castle.DynamicProxy;
 using EdjCase.JsonRpc.Client;
 
-namespace ApiLab.Scheme.JsonRpc.JsonRpcClient
+namespace ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient
 {
-    public static class JsonRpcProxyBuilder
+    public static class JsonRpcClient
     {
 
         /// <summary>
-        /// Create a service interface implementation that routes all operations to a JSON-RPC endpoint
+        /// Create an interface implementation whose operations route to a JSON-RPC endpoint
         /// </summary>
         ///
         /// <typeparam name="TService">
-        /// The service interface
+        /// The interface
         /// </typeparam>
         ///
         /// <param name="uri">
@@ -21,7 +21,7 @@ namespace ApiLab.Scheme.JsonRpc.JsonRpcClient
         /// </param>
         ///
         /// <returns>
-        /// An implementation of <typeparamref name="TService"/> that routes operations to the JSON-RPC endpoint at the
+        /// An implementation of <typeparamref name="TService"/> whose operations route to the JSON-RPC endpoint at the
         /// specified <paramref name="uri"/>
         /// </returns>
         ///

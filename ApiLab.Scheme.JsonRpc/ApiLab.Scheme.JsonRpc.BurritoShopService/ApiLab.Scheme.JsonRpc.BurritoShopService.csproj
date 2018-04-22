@@ -11,13 +11,14 @@
   <ItemGroup>
     <PackageReference Include="EdjCase.JsonRpc.Router" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\ApiLab\ApiLab.Breads\ApiLab.Breads.csproj" />
     <ProjectReference Include="..\..\ApiLab\ApiLab.Meats\ApiLab.Meats.csproj" />
     <ProjectReference Include="..\..\ApiLab\ApiLab.Normal.BurritoShop\ApiLab.Normal.BurritoShop.csproj" />
-    <ProjectReference Include="..\ApiLab.Scheme.JsonRpc.JsonRpcClient\ApiLab.Scheme.JsonRpc.JsonRpcClient.csproj" />
+    <ProjectReference Include="..\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient.csproj" />
   </ItemGroup>
 
 </Project>

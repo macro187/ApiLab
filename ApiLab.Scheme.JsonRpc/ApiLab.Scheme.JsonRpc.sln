@@ -17,13 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Normal.BurritoShop",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.IntegrationTests", "..\ApiLab\ApiLab.IntegrationTests\ApiLab.IntegrationTests.csproj", "{6B07EB37-DFB0-4634-A38B-05571F83501A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.JsonRpcClient", "ApiLab.Scheme.JsonRpc.JsonRpcClient\ApiLab.Scheme.JsonRpc.JsonRpcClient.csproj", "{3FB76BB5-B87B-4943-B823-B31F01133127}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient", "ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient.csproj", "{3FB76BB5-B87B-4943-B823-B31F01133127}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.BakeryService", "ApiLab.Scheme.JsonRpc.BakeryService\ApiLab.Scheme.JsonRpc.BakeryService.csproj", "{F7061781-8D85-4689-A0E2-74D58BB81E60}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.ButcherService", "ApiLab.Scheme.JsonRpc.ButcherService\ApiLab.Scheme.JsonRpc.ButcherService.csproj", "{7F8E1652-F106-4D6F-A579-719790EC09D7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.BurritoShopService", "ApiLab.Scheme.JsonRpc.BurritoShopService\ApiLab.Scheme.JsonRpc.BurritoShopService.csproj", "{652BF460-7EAD-4169-9A18-79849234E94B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient", "ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient.csproj", "{0F63B2A7-7C63-4665-A07F-360F9B0AF712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.App", "ApiLab.Scheme.JsonRpc.App\ApiLab.Scheme.JsonRpc.App.csproj", "{6A580246-9C0C-4C16-B6A3-6BEACC215E78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{652BF460-7EAD-4169-9A18-79849234E94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{652BF460-7EAD-4169-9A18-79849234E94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{652BF460-7EAD-4169-9A18-79849234E94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F63B2A7-7C63-4665-A07F-360F9B0AF712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F63B2A7-7C63-4665-A07F-360F9B0AF712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F63B2A7-7C63-4665-A07F-360F9B0AF712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F63B2A7-7C63-4665-A07F-360F9B0AF712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A580246-9C0C-4C16-B6A3-6BEACC215E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A580246-9C0C-4C16-B6A3-6BEACC215E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A580246-9C0C-4C16-B6A3-6BEACC215E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A580246-9C0C-4C16-B6A3-6BEACC215E78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
