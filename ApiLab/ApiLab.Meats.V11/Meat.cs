@@ -1,4 +1,4 @@
-﻿namespace ApiLab.Meats
+﻿namespace ApiLab.Meats.V11
 {
     public class Meat
     {

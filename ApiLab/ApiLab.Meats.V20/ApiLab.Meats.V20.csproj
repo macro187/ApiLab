@@ -4,8 +4,4 @@
     <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ApiLab.Meats.V20\ApiLab.Meats.V20.csproj" />
-  </ItemGroup>
-
 </Project>

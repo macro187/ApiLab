@@ -1,4 +1,4 @@
-﻿namespace ApiLab.Meats
+﻿namespace ApiLab.Meats.V20
 {
     public interface IButcher
     {

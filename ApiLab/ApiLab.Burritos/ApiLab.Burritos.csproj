@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApiLab.Breads\ApiLab.Breads.csproj" />
-    <ProjectReference Include="..\ApiLab.Meats\ApiLab.Meats.csproj" />
+    <ProjectReference Include="..\ApiLab.Meats.V20\ApiLab.Meats.V20.csproj" />
   </ItemGroup>
 
 </Project>

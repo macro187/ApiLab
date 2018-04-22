@@ -1,7 +1,7 @@
 ﻿using System;
 using ApiLab.Breads;
 using ApiLab.Burritos;
-using ApiLab.Meats;
+using ApiLab.Meats.V20;
 
 namespace ApiLab.Normal.BurritoShop
 {
