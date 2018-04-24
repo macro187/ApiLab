@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ApiLab.Tests
 {
     [TestClass]
-    public class IntegrationTests
+    public class BurritoShopIntegrationTests
     {
 
         NormalBurritoShop burritoShop;

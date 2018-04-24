@@ -14,7 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ApiLab.Breads\ApiLab.Breads.csproj" />
     <ProjectReference Include="..\ApiLab.Burritos\ApiLab.Burritos.csproj" />
-    <ProjectReference Include="..\ApiLab.Meats.V10\ApiLab.Meats.V10.csproj" />
+    <ProjectReference Include="..\ApiLab.Meats.Compat\ApiLab.Meats.Compat.csproj" />
     <ProjectReference Include="..\ApiLab.Meats.V11\ApiLab.Meats.V11.csproj" />
     <ProjectReference Include="..\ApiLab.Meats.V20\ApiLab.Meats.V20.csproj" />
     <ProjectReference Include="..\ApiLab.Normal.Bakery\ApiLab.Normal.Bakery.csproj" />
