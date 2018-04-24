@@ -4,10 +4,10 @@ using ApiLab.Normal.BurritoShop;
 using ApiLab.Normal.Butcher;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ApiLab.IntegrationTests
+namespace ApiLab.Tests
 {
     [TestClass]
-    public class ApiLabIntegrationTests
+    public class IntegrationTests
     {
 
         NormalBurritoShop burritoShop;
@@ -23,7 +23,7 @@ namespace ApiLab.IntegrationTests
 
 
         [TestMethod]
-        public void Eat_Healthy_Burrito()
+        public void Burrito_Shop_Can_Make_Healthy_Burrito()
         {
             var burrito = burritoShop.MakeBurrito("HealthyBurrito");
 
@@ -36,7 +36,7 @@ namespace ApiLab.IntegrationTests
 
 
         [TestMethod]
-        public void Eat_Unhealthy_Burrito()
+        public void Burrito_Shop_Can_Make_Unhealthy_Burrito()
         {
             var burrito = burritoShop.MakeBurrito("UnhealthyBurrito");
 
