@@ -39,7 +39,11 @@ Network wire format is human-readable?
 Service Implementations
 -----------------------
 
-Normal C# programming style?
+Works on .Net Framework?
+
+Works on .Net Core?
+
+Does not require unusual programming style?
 
 LOC?
 
