@@ -16,7 +16,7 @@ namespace ApiLab.Scheme.JsonRpc.BurritoShopService
         {
             services.AddCors(options => {
                 options.AddPolicy(
-                    "FuckOffCors",
+                    "AllowAny",
                     policy => {
                         policy.AllowAnyMethod();
                         policy.AllowAnyHeader();
@@ -40,7 +40,7 @@ namespace ApiLab.Scheme.JsonRpc.BurritoShopService
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseCors("FuckOffCors");
+            app.UseCors("AllowAny");
 
             app.UseManualJsonRpc(builder => {
                 builder.RegisterController<NormalBurritoShop>();
