@@ -1,4 +1,3 @@
-using System;
 using ApiLab.Meats.Compat;
 using ApiLab.Normal.Butcher;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -8,7 +7,7 @@ using V20 = ApiLab.Meats.V20;
 namespace ApiLab.Tests
 {
     [TestClass]
-    public class MeatsCompatTests
+    public class NormalButcherTests
     {
 
         V11.IButcher butcherV1;
