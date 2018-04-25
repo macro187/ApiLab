@@ -28,11 +28,11 @@ namespace ApiLab.Scheme.JsonRpc.BurritoShopService
                 options.ShowServerExceptions = true;
             });
 
-            services.AddTransient<IBakery>(_ =>
+            services.AddTransient(_ =>
                 JsonRpcClient.Build<IBakery>(new Uri("http://localhost:53712/")));
 
-            services.AddTransient<IButcher>(_ =>
-                JsonRpcClient.Build<IButcher>(new Uri("http://localhost:53990/")));
+            services.AddTransient(_ =>
+                JsonRpcClient.Build<IButcher>(new Uri("http://localhost:53990/v2")));
 
             services.AddTransient<NormalBurritoShop>();
         }

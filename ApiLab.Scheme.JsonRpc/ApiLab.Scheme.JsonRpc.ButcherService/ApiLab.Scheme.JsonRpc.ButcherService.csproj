@@ -14,6 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Meats.Compat\ApiLab.Meats.Compat.csproj" />
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Meats.V20\ApiLab.Meats.V20.csproj" />
     <ProjectReference Include="..\..\ApiLab\ApiLab.Normal.Butcher\ApiLab.Normal.Butcher.csproj" />
   </ItemGroup>
 
