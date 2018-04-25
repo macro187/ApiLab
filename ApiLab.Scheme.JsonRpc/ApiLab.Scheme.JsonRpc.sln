@@ -7,15 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Breads", "..\ApiLab\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Burritos", "..\ApiLab\ApiLab.Burritos\ApiLab.Burritos.csproj", "{0BA9BE1B-3331-48A5-AB9B-532AD9CB3680}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Meats", "..\ApiLab\ApiLab.Meats\ApiLab.Meats.csproj", "{FBB674E0-B270-4C38-9A10-DFAC3587C3B4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Normal.Bakery", "..\ApiLab\ApiLab.Normal.Bakery\ApiLab.Normal.Bakery.csproj", "{FBE17DB3-29B0-47DE-9B52-D97FAAFF7627}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Normal.Butcher", "..\ApiLab\ApiLab.Normal.Butcher\ApiLab.Normal.Butcher.csproj", "{67182533-BD1B-4BC3-8617-576B4A780F30}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Normal.BurritoShop", "..\ApiLab\ApiLab.Normal.BurritoShop\ApiLab.Normal.BurritoShop.csproj", "{E87AA7AB-2EA3-42B8-8C77-67C81B13D12C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.IntegrationTests", "..\ApiLab\ApiLab.IntegrationTests\ApiLab.IntegrationTests.csproj", "{6B07EB37-DFB0-4634-A38B-05571F83501A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient", "ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient.csproj", "{3FB76BB5-B87B-4943-B823-B31F01133127}"
 EndProject
@@ -25,9 +21,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.Butch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.BurritoShopService", "ApiLab.Scheme.JsonRpc.BurritoShopService\ApiLab.Scheme.JsonRpc.BurritoShopService.csproj", "{652BF460-7EAD-4169-9A18-79849234E94B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient", "ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient.csproj", "{0F63B2A7-7C63-4665-A07F-360F9B0AF712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient", "ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.JsJsonRpcClient.csproj", "{0F63B2A7-7C63-4665-A07F-360F9B0AF712}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.App", "ApiLab.Scheme.JsonRpc.App\ApiLab.Scheme.JsonRpc.App.csproj", "{6A580246-9C0C-4C16-B6A3-6BEACC215E78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Scheme.JsonRpc.App", "ApiLab.Scheme.JsonRpc.App\ApiLab.Scheme.JsonRpc.App.csproj", "{6A580246-9C0C-4C16-B6A3-6BEACC215E78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Meats.Compat", "..\ApiLab\ApiLab.Meats.Compat\ApiLab.Meats.Compat.csproj", "{E2EA7B69-1833-4E49-A327-4464B1472CD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Meats.V10", "..\ApiLab\ApiLab.Meats.V10\ApiLab.Meats.V10.csproj", "{B3182EA8-370C-4ED3-8942-18ED7159DAE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Meats.V11", "..\ApiLab\ApiLab.Meats.V11\ApiLab.Meats.V11.csproj", "{B27BEBD6-5ADD-49B8-BFD9-4ED4CDCF194A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Meats.V20", "..\ApiLab\ApiLab.Meats.V20\ApiLab.Meats.V20.csproj", "{F4979B13-76BB-4221-8435-E040B4F24DD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Tests", "..\ApiLab\ApiLab.Tests\ApiLab.Tests.csproj", "{51C35639-EE9E-4590-B430-D4DE6C117130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +49,6 @@ Global
 		{0BA9BE1B-3331-48A5-AB9B-532AD9CB3680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BA9BE1B-3331-48A5-AB9B-532AD9CB3680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BA9BE1B-3331-48A5-AB9B-532AD9CB3680}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBB674E0-B270-4C38-9A10-DFAC3587C3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBB674E0-B270-4C38-9A10-DFAC3587C3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBB674E0-B270-4C38-9A10-DFAC3587C3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBB674E0-B270-4C38-9A10-DFAC3587C3B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FBE17DB3-29B0-47DE-9B52-D97FAAFF7627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FBE17DB3-29B0-47DE-9B52-D97FAAFF7627}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBE17DB3-29B0-47DE-9B52-D97FAAFF7627}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,10 +61,6 @@ Global
 		{E87AA7AB-2EA3-42B8-8C77-67C81B13D12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E87AA7AB-2EA3-42B8-8C77-67C81B13D12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E87AA7AB-2EA3-42B8-8C77-67C81B13D12C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B07EB37-DFB0-4634-A38B-05571F83501A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B07EB37-DFB0-4634-A38B-05571F83501A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B07EB37-DFB0-4634-A38B-05571F83501A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B07EB37-DFB0-4634-A38B-05571F83501A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FB76BB5-B87B-4943-B823-B31F01133127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3FB76BB5-B87B-4943-B823-B31F01133127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB76BB5-B87B-4943-B823-B31F01133127}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +85,26 @@ Global
 		{6A580246-9C0C-4C16-B6A3-6BEACC215E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A580246-9C0C-4C16-B6A3-6BEACC215E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A580246-9C0C-4C16-B6A3-6BEACC215E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2EA7B69-1833-4E49-A327-4464B1472CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2EA7B69-1833-4E49-A327-4464B1472CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2EA7B69-1833-4E49-A327-4464B1472CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2EA7B69-1833-4E49-A327-4464B1472CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3182EA8-370C-4ED3-8942-18ED7159DAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3182EA8-370C-4ED3-8942-18ED7159DAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3182EA8-370C-4ED3-8942-18ED7159DAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3182EA8-370C-4ED3-8942-18ED7159DAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27BEBD6-5ADD-49B8-BFD9-4ED4CDCF194A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27BEBD6-5ADD-49B8-BFD9-4ED4CDCF194A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27BEBD6-5ADD-49B8-BFD9-4ED4CDCF194A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27BEBD6-5ADD-49B8-BFD9-4ED4CDCF194A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4979B13-76BB-4221-8435-E040B4F24DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4979B13-76BB-4221-8435-E040B4F24DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4979B13-76BB-4221-8435-E040B4F24DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4979B13-76BB-4221-8435-E040B4F24DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C35639-EE9E-4590-B430-D4DE6C117130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C35639-EE9E-4590-B430-D4DE6C117130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C35639-EE9E-4590-B430-D4DE6C117130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C35639-EE9E-4590-B430-D4DE6C117130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

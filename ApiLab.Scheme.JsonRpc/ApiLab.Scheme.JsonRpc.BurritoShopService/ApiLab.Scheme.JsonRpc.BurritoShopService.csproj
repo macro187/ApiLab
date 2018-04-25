@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\ApiLab\ApiLab.Breads\ApiLab.Breads.csproj" />
-    <ProjectReference Include="..\..\ApiLab\ApiLab.Meats\ApiLab.Meats.csproj" />
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Meats.V20\ApiLab.Meats.V20.csproj" />
     <ProjectReference Include="..\..\ApiLab\ApiLab.Normal.BurritoShop\ApiLab.Normal.BurritoShop.csproj" />
     <ProjectReference Include="..\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient.csproj" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 using ApiLab.Breads;
-using ApiLab.Meats;
+using ApiLab.Meats.V20;
 using ApiLab.Normal.BurritoShop;
 using ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient;
 using Microsoft.AspNetCore.Builder;
