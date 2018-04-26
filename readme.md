@@ -16,6 +16,10 @@ communicating over the network.
 Scheme To-Do List
 =================
 
+Create an *ApiLab.Scheme.\<name\>* subdirectory and solution.
+
+Import provided *ApiLab* projects into solution.
+
 Publish the provided *NormalBakery* as a service.
 
 Publish the provided *NormalButcher* as a service.
@@ -41,11 +45,13 @@ Network communication encrypted?
 
 Network wire format is human-readable?
 
+Compatible with standard authentication and authorisation mechanisms?
+
 
 Service Implementations
 -----------------------
 
-Able to re-use existing *NormalBurritoShop* implementation?
+Can re-use existing *NormalBurritoShop* implementation?
 
 No "template" boilerplate?
 
