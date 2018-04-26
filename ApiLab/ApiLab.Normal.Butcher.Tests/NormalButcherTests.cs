@@ -1,37 +1,51 @@
 using ApiLab.Meats.Compat;
-using ApiLab.Normal.Butcher;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using V11 = ApiLab.Meats.V11;
 using V20 = ApiLab.Meats.V20;
 
-namespace ApiLab.Tests
+namespace ApiLab.Normal.Butcher.Tests
 {
     [TestClass]
     public class NormalButcherTests
     {
 
-        V11.IButcher butcherV1;
+        public V11.IButcher butcherV11;
+        public V20.IButcher butcherV20;
 
 
         [TestInitialize]
-        public void TestInitialize()
+        public virtual void TestInitialize()
         {
-            V20.IButcher butcherV2 = new NormalButcher();
-            butcherV1 = new ButcherV2ToV1Adapter(butcherV2);
+            butcherV20 = new NormalButcher();
+            butcherV11 = new ButcherV2ToV1Adapter(butcherV20);
         }
 
 
         [TestMethod]
-        public void Butcher_V1_Can_Get_Chicken()
+        public void Butcher_V20_Can_Get_Chicken()
         {
-            Assert.AreEqual("Chicken", butcherV1.GetChicken().Name);
+            Assert.AreEqual("Chicken", butcherV20.GetMeat("Chicken").Name);
         }
 
 
         [TestMethod]
-        public void Butcher_V1_Can_Get_Pulled_Pork()
+        public void Butcher_V20_Can_Get_Pulled_Pork()
         {
-            Assert.AreEqual("PulledPork", butcherV1.GetPulledPork().Name);
+            Assert.AreEqual("PulledPork", butcherV20.GetMeat("PulledPork").Name);
+        }
+
+
+        [TestMethod]
+        public void Butcher_V11_Can_Get_Chicken()
+        {
+            Assert.AreEqual("Chicken", butcherV11.GetChicken().Name);
+        }
+
+
+        [TestMethod]
+        public void Butcher_V11_Can_Get_Pulled_Pork()
+        {
+            Assert.AreEqual("PulledPork", butcherV11.GetPulledPork().Name);
         }
 
     }

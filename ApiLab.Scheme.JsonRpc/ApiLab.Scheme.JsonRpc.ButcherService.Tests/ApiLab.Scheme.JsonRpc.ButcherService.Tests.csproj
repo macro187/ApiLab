@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Meats.V10\ApiLab.Meats.V10.csproj" />
+    <ProjectReference Include="..\..\ApiLab\ApiLab.Normal.Butcher.Tests\ApiLab.Normal.Butcher.Tests.csproj" />
+    <ProjectReference Include="..\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient\ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient.csproj" />
+  </ItemGroup>
+
+</Project>

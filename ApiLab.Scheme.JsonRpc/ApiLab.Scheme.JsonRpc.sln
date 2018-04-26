@@ -37,6 +37,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Normal.Butcher.Tests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiLab.Normal.BurritoShop.Tests", "..\ApiLab\ApiLab.Normal.BurritoShop.Tests\ApiLab.Normal.BurritoShop.Tests.csproj", "{1588C183-D7A9-41F4-B2FF-3B215FC06D79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.BurritoShopService.Tests", "ApiLab.Scheme.JsonRpc.BurritoShopService.Tests\ApiLab.Scheme.JsonRpc.BurritoShopService.Tests.csproj", "{64D30C4C-24B1-4793-8AD4-848D40ACF6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiLab.Scheme.JsonRpc.ButcherService.Tests", "ApiLab.Scheme.JsonRpc.ButcherService.Tests\ApiLab.Scheme.JsonRpc.ButcherService.Tests.csproj", "{B160F710-8BD2-438D-B6CA-9747EC28D967}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{1588C183-D7A9-41F4-B2FF-3B215FC06D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1588C183-D7A9-41F4-B2FF-3B215FC06D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1588C183-D7A9-41F4-B2FF-3B215FC06D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D30C4C-24B1-4793-8AD4-848D40ACF6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D30C4C-24B1-4793-8AD4-848D40ACF6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D30C4C-24B1-4793-8AD4-848D40ACF6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D30C4C-24B1-4793-8AD4-848D40ACF6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B160F710-8BD2-438D-B6CA-9747EC28D967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B160F710-8BD2-438D-B6CA-9747EC28D967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B160F710-8BD2-438D-B6CA-9747EC28D967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B160F710-8BD2-438D-B6CA-9747EC28D967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
