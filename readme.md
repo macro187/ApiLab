@@ -22,7 +22,9 @@ Import provided *ApiLab* projects into solution.
 
 Publish the provided *NormalBakery* as a service.
 
-Publish the provided *NormalButcher* as a service.
+Publish the provided *NormalButcher* as a service, supporting v1.0, v1.1, and
+v2.0 clients at the same time.  May or may not use the provided
+*ApiLab.Meats.Compat* backwards-compatibility library.
 
 Implement an *IBurritoShop* service and publish it.  May or may not use the
 provided *NormalBurritoShop* implementation, but must behave the same.  Must get
