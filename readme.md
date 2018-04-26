@@ -5,20 +5,26 @@ Evaluate .NET API / SOA schemes
 
 
 
-Mission
-=======
+Goal
+====
 
-Publish the *NormalBakery* and *NormalButcher* as services.
+Find the best scheme for running .NET services on separate machines
+communicating over the network.
 
-Implement and publish an *IBurritoShop* service.
 
-The *IBurritoShop* must get its ingredients from the *NormalBakery* and
-*NormalButcher* services.
 
-The *IBurritoShop* may or may not use the *NormalBurritoShop* implementation,
-but it must behave the same.
+Scheme To-Do List
+=================
 
-Implement a client that gets lunch from the *IBurritoShop* service.
+Publish the provided *NormalBakery* as a service.
+
+Publish the provided *NormalButcher* as a service.
+
+Implement an *IBurritoShop* service and publish it.  May or may not use the
+provided *NormalBurritoShop* implementation, but must behave the same.  Must get
+ingredients from the *NormalBakery* and *NormalButcher* services above.
+
+Implement a web client that gets burritos from the *IBurritoShop* service.
 
 
 
@@ -39,11 +45,17 @@ Network wire format is human-readable?
 Service Implementations
 -----------------------
 
-Works on .Net Framework?
+Able to re-use existing *NormalBurritoShop* implementation?
 
-Works on .Net Core?
+No "template" boilerplate?
 
-Does not require unusual programming style?
+Lines of code?
 
-LOC?
+
+Deployment
+----------
+
+.Net Framework?
+
+.Net Core?
 
