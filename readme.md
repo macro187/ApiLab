@@ -59,6 +59,20 @@ No "template" boilerplate?
 
 Lines of code?
 
+Supports async?
+
+
+Client Library
+--------------
+
+.NET client library?
+
+.NET client library strongly-typed?
+
+.NET client library supports async?
+
+JavaScript client library?
+
 
 Deployment
 ----------

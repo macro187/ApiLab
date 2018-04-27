@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using ApiLab.Breads;
 using ApiLab.Burritos;
 using ApiLab.Meats.V20;
@@ -40,6 +41,18 @@ namespace ApiLab.Normal.BurritoShop
                 default:
                     throw new Exception("We don't offer {name}");
             }
+        }
+
+
+        public Task<Burrito> MakeBurritoAsync(string name)
+        {
+            return Task.FromResult(MakeBurrito(name));
+        }
+
+
+        public Task BeLazyFor3SecondsAsync()
+        {
+            return Task.Delay(3000);
         }
 
     }

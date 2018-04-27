@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Linq;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
 using Castle.DynamicProxy;
 using EdjCase.JsonRpc.Client;
+using EdjCase.JsonRpc.Core;
 
 namespace ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient
 {
@@ -43,24 +46,79 @@ namespace ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient
 
             public Interceptor(Uri uri)
             {
-                _uri = uri;
+                this.uri = uri;
             }
 
-            readonly Uri _uri;
+
+            readonly Uri uri;
 
 
             public void Intercept(IInvocation invocation)
             {
-                var rpcClient = new RpcClient(_uri, (AuthenticationHeaderValue)null);
+                var rpcClient = new RpcClient(uri, (AuthenticationHeaderValue)null);
 
                 var requestTask = rpcClient.SendRequestAsync(
                     invocation.Method.Name,
                     null,
                     invocation.Arguments);
 
-                requestTask.Wait();
+                invocation.ReturnValue = GetReturnValue(requestTask, invocation.Method.ReturnType);
+            }
 
-                invocation.ReturnValue = requestTask.Result.Result.ToObject(invocation.Method.ReturnType);
+
+            static object GetReturnValue(Task<RpcResponse> requestTask, Type returnType)
+            {
+                //
+                // Task => Async the request
+                //
+                if (returnType == typeof(Task))
+                {
+                    return requestTask;
+                }
+
+                //
+                // Task<T> => Async the request plus unpack the return value
+                //
+                else if (returnType.IsGenericType && returnType.GetGenericTypeDefinition() == typeof(Task<>))
+                {
+                    Type t = returnType.GetGenericArguments().Single();
+
+                    var unpackAsync =
+                        ((Func<Task<RpcResponse>,Task<object>>)UnpackAsync<object>)
+                            .Method
+                            .GetGenericMethodDefinition()
+                            .MakeGenericMethod(t);
+
+                    return unpackAsync.Invoke(null, new[]{ requestTask });
+                }
+
+                //
+                // Any other type: Sync wait for the request to finish then unpack the result
+                //
+                else
+                {
+                    requestTask.Wait();
+
+                    var unpack =
+                        ((Func<Task<RpcResponse>,object>)Unpack<object>)
+                            .Method
+                            .GetGenericMethodDefinition()
+                            .MakeGenericMethod(returnType);
+
+                    return unpack.Invoke(null, new[]{ requestTask });
+                }
+            }
+
+
+            static Task<T> UnpackAsync<T>(Task<RpcResponse> requestTask)
+            {
+                return requestTask.ContinueWith(Unpack<T>);
+            }
+
+
+            static T Unpack<T>(Task<RpcResponse> requestTask)
+            {
+                return requestTask.Result.GetResult<T>(false);
             }
 
         }
