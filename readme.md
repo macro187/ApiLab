@@ -53,11 +53,11 @@ Compatible with standard authentication and authorisation mechanisms?
 Service Implementations
 -----------------------
 
-Can re-use existing *NormalBurritoShop* implementation?
+Existing *NormalBurritoShop* implementation can be used?
 
-No "template" boilerplate?
+Lines of non-business-logic boilerplate code / config?
 
-Lines of code?
+Lines of code total?
 
 Supports async?
 
