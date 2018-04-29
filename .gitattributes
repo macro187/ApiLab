@@ -1,0 +1,5 @@
+#
+# Disable Git line ending conversion
+#
+* -text
+
