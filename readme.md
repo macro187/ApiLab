@@ -49,6 +49,8 @@ Network wire format is human-readable?
 
 Compatible with standard authentication and authorisation mechanisms?
 
+Protocol supports batched operations?
+
 
 Service Implementations
 -----------------------
@@ -70,6 +72,8 @@ Client Library
 .NET client library strongly-typed?
 
 .NET client library supports async?
+
+.NET client library supports batched operations?
 
 JavaScript client library?
 

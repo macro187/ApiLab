@@ -2,7 +2,6 @@ using System;
 using System.Diagnostics;
 using ApiLab.Burritos;
 using ApiLab.Normal.Bakery;
-using ApiLab.Normal.BurritoShop;
 using ApiLab.Normal.Butcher;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -12,21 +11,15 @@ namespace ApiLab.Normal.BurritoShop.Tests
     public class NormalBurritoShopTests
     {
 
-        IBurritoShop burritoShop;
-
-
-        public virtual IBurritoShop GetBurritoShop()
-        {
-            var bakery = new NormalBakery();
-            var butcher = new NormalButcher();
-            return new NormalBurritoShop(bakery, butcher);
-        }
+        protected IBurritoShop burritoShop;
 
 
         [TestInitialize]
-        public void TestInitialize()
+        public virtual void TestInitialize()
         {
-            burritoShop = GetBurritoShop();
+            var bakery = new NormalBakery();
+            var butcher = new NormalButcher();
+            burritoShop = new NormalBurritoShop(bakery, butcher);
         }
 
 
