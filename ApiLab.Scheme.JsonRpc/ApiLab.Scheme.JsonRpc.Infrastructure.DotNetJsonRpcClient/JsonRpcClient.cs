@@ -66,10 +66,14 @@ namespace ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient
             }
 
 
+            /// <summary>
+            /// Get service method return value based on the return type
+            /// </summary>
+            ///
             static object GetReturnValue(Task<RpcResponse> requestTask, Type returnType)
             {
                 //
-                // Task => Async the request
+                // Task => The request task itself
                 //
                 if (returnType == typeof(Task))
                 {
@@ -77,7 +81,7 @@ namespace ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient
                 }
 
                 //
-                // Task<T> => Async the request plus unpack the return value
+                // Task<T> => The request plus unpacking the result as a Task<T>
                 //
                 else if (returnType.IsGenericType && returnType.GetGenericTypeDefinition() == typeof(Task<>))
                 {
@@ -93,7 +97,7 @@ namespace ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient
                 }
 
                 //
-                // Any other type: Sync wait for the request to finish then unpack the result
+                // Any other type: Wait for the request to finish, unpack the result, and return it
                 //
                 else
                 {
