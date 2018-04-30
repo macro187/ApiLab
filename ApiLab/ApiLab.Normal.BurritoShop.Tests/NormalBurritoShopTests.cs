@@ -78,7 +78,7 @@ namespace ApiLab.Normal.BurritoShop.Tests
             watch.Start();
             burritoShop.BeLazyFor3SecondsAsync().Wait();
             watch.Stop();
-            Assert.IsTrue(watch.ElapsedMilliseconds > 3000);
+            Assert.IsTrue(watch.ElapsedMilliseconds >= 3000);
         }
 
     }
