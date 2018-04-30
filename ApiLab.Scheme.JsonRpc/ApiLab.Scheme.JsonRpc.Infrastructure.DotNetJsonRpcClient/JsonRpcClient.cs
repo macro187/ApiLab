@@ -46,21 +46,21 @@ namespace ApiLab.Scheme.JsonRpc.Infrastructure.DotNetJsonRpcClient
 
             public Interceptor(Uri uri)
             {
-                this.uri = uri;
+                rpcClient = new RpcClient(uri, (AuthenticationHeaderValue)null);
             }
 
 
-            readonly Uri uri;
+            readonly RpcClient rpcClient;
 
 
             public void Intercept(IInvocation invocation)
             {
-                var rpcClient = new RpcClient(uri, (AuthenticationHeaderValue)null);
-
-                var requestTask = rpcClient.SendRequestAsync(
+                var request = RpcRequest.WithParameterList(
                     invocation.Method.Name,
-                    null,
-                    invocation.Arguments);
+                    invocation.Arguments,
+                    Guid.NewGuid().ToString());
+
+                var requestTask = rpcClient.SendRequestAsync(request);
 
                 invocation.ReturnValue = GetReturnValue(requestTask, invocation.Method.ReturnType);
             }
