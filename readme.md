@@ -1,87 +1,131 @@
 ApiLab
 ======
 
-Evaluate .NET API / SOA schemes
+Proof-of-concept (micro?) [service oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
+implementation using JSON-RPC on ASP.NET Core.
 
 
 
-Goal
-====
+Prerequisites
+=============
 
-Find the best scheme for running .NET services on separate machines
-communicating over the network.
+Semantic Versioning
+-------------------
+
+Especially the meaning of major, minor, and patch version number components with respect to backwards compatibility.
+
+<https://semver.org/>
 
 
+Domain Driven Design
+--------------------
 
-Scheme To-Do List
-=================
+Especially what models and services are.
 
-Create an *ApiLab.Scheme.\<name\>* subdirectory and solution.
-
-Import provided *ApiLab* projects into solution.
-
-Publish the provided *NormalBakery* as a service.
-
-Publish the provided *NormalButcher* as a service, supporting v1.0, v1.1, and
-v2.0 clients at the same time.  May or may not use the provided
-*ApiLab.Meats.Compat* backwards-compatibility library.
-
-Implement an *IBurritoShop* service and publish it.  May or may not use the
-provided *NormalBurritoShop* implementation, but must behave the same.  Must get
-ingredients from the *NormalBakery* and *NormalButcher* services above.
-
-Implement a web client that gets burritos from the *IBurritoShop* service.
+<https://en.wikipedia.org/wiki/Domain-driven_design#Building_blocks>
 
 
 
-Evaluation Criteria
-===================
+Definitions
+===========
+
+POCO Service
+------------
+
+A service accessible in-process, implemented as an `IFooService` + `FooService` pair of the sort you might register in
+an IOC container as has been standard .NET practice for the past decade or two.
 
 
-Network
--------
+Network Service
+---------------
 
-Services communicate over the network?
-
-Network communication encrypted?
-
-Network wire format is human-readable?
-
-Compatible with standard authentication and authorisation mechanisms?
-
-Protocol supports batched operations?
+A service accessible over the network.
 
 
-Service Implementations
------------------------
 
-Existing *NormalBurritoShop* implementation can be used?
+Problem
+=======
 
-Lines of non-business-logic boilerplate code / config?
-
-Lines of code total?
-
-Supports async?
+Implement a (micro?) service oriented architecture providing the most desired benefits at the lowest cost.
 
 
-Client Library
---------------
 
-.NET client library?
+Desired Benefits
+================
 
-.NET client library strongly-typed?
-
-.NET client library supports async?
-
-.NET client library supports batched operations?
-
-JavaScript client library?
-
-
-Deployment
+Versioning
 ----------
 
-.Net Framework?
+Enable components to evolve at different speeds, with faster-changing components maintaining backwards-compatibility for
+slower-changing ones.
 
-.Net Core?
+<https://github.com/microsoft/aspnet-api-versioning/wiki>
+
+
+
+Costs
+=====
+
+Additions or Modifications to Service Code
+------------------------------------------
+
+One-time modification work required to a POCO service so it can be exposed as a network service.
+
+Ongoing non-POCOness or non-standardness.
+
+Ongoing additional complexity.
+
+Ongoing pollution of domain service with infrastructure concerns.
+
+
+Network Hosting Infrastructure Boilerplate
+------------------------------------------
+
+One-time setup of additional network hosting code.
+
+Ongoing maintenance costs and risks of additional network hosting code.
+
+
+Additions or Modifications to Client Code
+-----------------------------------------
+
+One-time setup of additional client code required to consume a service over the network instead of in-process.
+
+Ongoing maintenance costs and risks of additional client code.
+
+
+
+Overall Features
+================
+
+Communication over HTTP(S)
+
+Human-readable, JSON wire format
+
+
+
+Service Features
+================
+
+ASP.NET Core on .NET Core and .NET Framework.
+
+Implementations are POCOs, zero additional code required to host on the network.
+
+Synchronous and `async` operations.
+
+
+
+Client Features
+===============
+
+.NET Core and .NET Framework.
+
+Javascript.
+
+Clients are dynamic, zero additional code required to consume a service over the
+network.
+
+Clients are async, .NET `async` and Javascript `Promise`.
+
+.NET client supports batching (multiple operations per network request).
 

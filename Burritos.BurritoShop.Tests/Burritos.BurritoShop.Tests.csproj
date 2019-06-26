@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Breads.Bakery\Breads.Bakery.csproj" />
+    <ProjectReference Include="..\Burritos.BurritoShop\Burritos.BurritoShop.csproj" />
+    <ProjectReference Include="..\Meats.Butcher\Meats.Butcher.csproj" />
+  </ItemGroup>
+
+</Project>

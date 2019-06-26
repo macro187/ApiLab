@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EdjCase.JsonRpc.Router" Version="2.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Breads.Bakery\Breads.Bakery.csproj" />
+  </ItemGroup>
+
+</Project>

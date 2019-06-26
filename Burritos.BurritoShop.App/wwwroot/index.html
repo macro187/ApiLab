@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+    <title>Burrito App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash/dist/lodash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-jsonrpc-js/simple-jsonrpc-js.js"></script>
+    <script src="MacroJsonRpcClient.js"></script>
+    <script>
+        var burritoShop = MacroJsonRpcClient.build('http://localhost:57982/v1');
+        window.onload = function() {
+            app = new Vue({
+                el: "#app",
+                data: {
+                    burritoToOrder: "HealthyBurrito",
+                    burrito: undefined,
+                },
+                methods: {
+                    order: function() {
+                        var data = this;
+                        burritoShop.MakeBurrito(this.burritoToOrder)
+                            .then(function(result) {
+                                data.burrito = result;
+                            });
+                    },
+                },
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="app">
+        <h1>Burrito App</h1>
+        <div>
+            <input v-model="burritoToOrder" />
+            <button v-on:click="order">Order</button>
+        </div>
+        <div v-if="burrito">
+            <h2>{{ burrito.Name }}</h2>
+            <div>Tortilla: {{ burrito.Tortilla.Name }}</div>
+            <div>Meat: {{ burrito.Meat.Name }}</div>
+        </div>
+    </div>
+</body>
+</html>

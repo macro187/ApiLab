@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Meats.V10\Meats.V10.csproj" />
+    <ProjectReference Include="..\MacroDotNetJsonRpcClient\MacroDotNetJsonRpcClient.csproj" />
+    <ProjectReference Include="..\Meats.V11\Meats.V11.csproj" />
+    <ProjectReference Include="..\Meats.V2\Meats.V2.csproj" />
+  </ItemGroup>
+
+</Project>
