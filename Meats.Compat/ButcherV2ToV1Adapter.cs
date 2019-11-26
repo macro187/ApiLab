@@ -1,4 +1,4 @@
-﻿namespace Meats.Compat
+namespace Meats.Compat
 {
     public class ButcherV2ToV1Adapter : V11.IButcher
     {

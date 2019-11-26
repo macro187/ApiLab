@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Breads.V1;
 using Meats.V2;
 using MacroDotNetJsonRpcClient;

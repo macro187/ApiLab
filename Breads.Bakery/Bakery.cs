@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Breads.V1;
 
 namespace Breads.Bakery

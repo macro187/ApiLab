@@ -1,4 +1,4 @@
-﻿namespace Meats.V2
+namespace Meats.V2
 {
     public class Meat
     {

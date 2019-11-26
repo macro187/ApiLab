@@ -1,4 +1,4 @@
-﻿namespace Meats.V10
+namespace Meats.V10
 {
     public interface IButcher
     {

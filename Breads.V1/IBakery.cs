@@ -1,4 +1,4 @@
-﻿namespace Breads.V1
+namespace Breads.V1
 {
     public interface IBakery
     {
